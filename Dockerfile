@@ -42,6 +42,7 @@ RUN apt-get update \
       gcc g++ make patch pkg-config gettext-base ruby${RUBY_VERSION}-dev libc6-dev zlib1g-dev libxml2-dev \
       libmysqlclient21 libpq5 libyaml-0-2 libcurl4 libssl1.1 uuid-dev xz-utils \
       libxslt1.1 libffi7 zlib1g gsfonts vim-tiny ghostscript sqlite3 libsqlite3-dev \
+      nodejs \
  && update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX \
  && gem install --no-document bundler \
  && rm -rf /var/lib/apt/lists/*
